@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(22, 22, 22);
+  padding: 20px;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1070px;
+  width: 100%;
+  display: flex;
+  margin-inline: 1rem;
+}
+.container .gradient-section {
+  width: 50%;
+  position: relative;
+}
+.container .gradient-section .gradient {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.6941176471);
+  background-image: radial-gradient(at 83% 69%, rgba(72, 72, 72, 0.772) 0px, transparent 50%), radial-gradient(at 9% 70%, rgb(159, 58, 58) 0px, transparent 50%), radial-gradient(at 61% 52%, rgb(195, 81, 81) 0px, transparent 50%), radial-gradient(at 28% 93%, rgb(101, 0, 164) 0px, transparent 50%), radial-gradient(at 34% 6%, rgb(200, 222, 255) 0px, transparent 50%), radial-gradient(at 51% 86%, rgb(0, 0, 0) 0px, transparent 50%), radial-gradient(at 32% 55%, rgb(216, 0, 235) 0px, transparent 50%);
+}
+.container .gradient-section .gradient-content {
+  padding: 2rem;
+  width: 92%;
+  color: hsl(0deg, 0%, 9%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(175, 175, 175, 0.28);
+  border: 1px solid rgb(168, 168, 168);
+}
+.container .gradient-section .gradient-content h1 {
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.container .gradient-section .gradient-content span {
+  color: #fff;
+}
+.container .form-section {
+  padding: 40px 50px 30px;
+  width: 550px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 0px 15px 15px 0;
+}
+.container .form-section h2,
+.container .form-section p {
+  color: #ddd;
+}
+.container .form-section form {
+  margin-top: 15px;
+}
+.container .form-section form .form-group {
+  margin-bottom: 12px;
+}
+.container .form-section form .form-group label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #525252;
+  display: block;
+  margin-bottom: 5px;
+}
+.container .form-section form .form-group input,
+.container .form-section form .form-group textarea {
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.3rem;
+  border: 2px solid #ccc;
+  border-radius: 0.3rem;
+  outline: none;
+  background: #989898;
+  font-weight: 500;
+}
+.container .form-section form .form-group textarea {
+  height: 150px;
+  resize: none;
+}
+.container .form-section form .form-group .send-btn {
+  color: white;
+  background: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.result-container {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result-container p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3461ca;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 60rem) {
+  .container {
+    margin: 0;
+  }
+  .container .gradient-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .container {
+    max-width: 90%;
+    flex-direction: column;
+    margin-inline: 0;
+  }
+  .container .gradient-section,
+.container .form-section {
+    width: 100%;
+  }
+  .container .gradient-section {
+    height: 25vh;
+  }
+  .container .gradient-section .gradient-content {
+    inset: 0;
+    transform: translate(0, 0);
+    padding: 1rem 1.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container .gradient-section .gradient-content h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .container .gradient-section .gradient-content p {
+    font-size: 0.75rem;
+  }
+  .container .form-section {
+    flex: 1;
+    padding: 1rem 1rem;
+  }
+  .container .form-section h2 {
+    font-size: 1.25rem;
+  }
+  .container .form-section button {
+    font-size: 0.87rem;
+  }
+}
+@media screen and (max-width: 36.25rem) {
+  .container {
+    max-width: 100%;
+  }
+  .container .form-section {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
