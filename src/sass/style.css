@@ -162,6 +162,7 @@ body {
   .container .form-section {
     flex: 1;
     padding: 1rem 1rem;
+    border-radius: 0 0 15px 15px;
   }
   .container .form-section h2 {
     font-size: 1.25rem;
